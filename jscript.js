@@ -1,5 +1,14 @@
-var newDiv = document.createElement('div');
-newDiv.textContent = "testing 1 2 3";
+function divCreate(){
+    var newDiv = document.createElement('div');
+    newDiv.className(gameCell)
+    newDiv.textContent = "testing 1 2 3";
 
-var container = document.getElementsByClassName('container');
-container.appendChild(newDiv)
+    var gameCell = document.getElementsByClassName('gameCell');
+    gameCell.appendChild(newDiv);
+}
+
+var gridSize = 5;
+for (i = 0; i < gridSize; i++){
+    divCreate();
+}
+

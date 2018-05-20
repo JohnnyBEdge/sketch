@@ -1,0 +1,9 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.gameCell{
+    display: grid;
+    border: solid black 2px;
+    }
