@@ -22,18 +22,18 @@
 //     console.log('test')
 //}
 
-function divCreate(numDivs){
+// function divCreate(numDivs){
     
-    for(i = 0; i < numDivs; i++){
-        for (j = 0; j < numDivs; j++){
-            var gridSquare = document.createElement('div');
-            gridSquare.className = 'gridSquare';
-            var apply = document.getElementById('gameCells');
-            apply.appendChild(gridSquare);
-        }
-      }
-    }
-divCreate(6);
+//     for(i = 0; i < numDivs; i++){
+//         for (j = 0; j < numDivs; j++){
+//             var gridSquare = document.createElement('div');
+//             gridSquare.className = 'gridSquare';
+//             var apply = document.getElementById('gameCells');
+//             apply.appendChild(gridSquare);
+//         }
+//       }
+//     }
+// divCreate(6);
 
 var slider = document.getElementById("rangeBar");
 var output = document.getElementById("gridSize");
@@ -43,3 +43,23 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value;
 };
+
+
+function createGrid(val){
+    
+var apply = document.getElementById('gameCells');
+
+for (var i = 0; i < val; i++){
+
+    var row = document.createElement('div');
+        row.className = 'row';
+
+        for( var j = 0; j < val; j++){
+            var cell = document.createElement('div');
+                cell.className = 'cell';
+                row.appendChild(cell);
+        }
+    apply.appendChild(row);
+    }
+}
+createGrid(5);
