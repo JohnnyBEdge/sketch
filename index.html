@@ -10,8 +10,11 @@
     <div class="container">
       <div class = "gridSize">
           <p>Size: <span id="gridSize"></span></p>
-        <input type="range" min = '4' max = '100' value = '20' class="slider" id="rangeBar">
+          <input type="range" min = '4' max = '20' class="slider" id="rangeBar">
+          <span> <input type="button" Value  = "Create Grid" onclick = "createGrid(2)"</input></span>
+          <span> <input type="button" Value  = "Clear Grid" onclick = "clearGrid()"</input></span>
       </div>
+
       
       <div class="gameboard" id="gameCells">
       

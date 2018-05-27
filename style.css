@@ -3,13 +3,12 @@ html{
     padding: 0;
 }
 
-/* .gameboard{
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
+ .container{
+    margin: 0 auto;
     border: blue solid 3px;
 }
 
-.container{
+/* .container{
     display: grid;
     width: 100%;
     justify-content: center;
@@ -18,7 +17,7 @@ html{
     border: solid 2px black;
     width: 100px;
     height: 100px;
-} */
+}  */
 
 .row{
     display: inline-block;
