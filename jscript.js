@@ -1,38 +1,43 @@
-// var slider = document.getElementById("rangeBar");
-// var output = document.getElementById("gridSize");
 
-// output.innerHTML = slider.value;
-// console.log(slider.value)
-
-// // var slideVal = slider.value;
-
-// slider.oninput = function() {
-//   output.innerHTML = this.value;
-//   };
+var val = prompt("enter value");
 
 
-//creates grid
+function createDivs(){
 
-function createGrid(val){ 
-    
-var apply = document.getElementById('gameCells');
+var getContainer = document.getElementById('contain');
+contain.style.display= 'grid';
+contain.style.gridTemplateColumns = 'repeat('+val+',1fr)';
 
-for (var i = 0; i < val; i++){
+var createDiv = document.createElement('div');
+createDiv.className = "cell";
 
-    var row = document.createElement('div');
-        row.className = 'row';
-
-        for( var j = 0; j < val; j++){
-            var cell = document.createElement('div');
-                cell.className = 'cell';
-                row.appendChild(cell);
-        }
-    apply.appendChild(row);
-    }
+getContainer.appendChild(createDiv);
 }
 
-//clears grid
-function clearGrid(){
+function createDivRow(){
+var getContainer = document.getElementById('contain');
 
-    location.reload()
+var createRow = document.createElement('div');
+createRow.className = "cell";
+
+getContainer.appendChild(createRow);
 }
+
+function createBoard(){
+for(var i = 0; i < val; i++){
+  createDivs();
+  for(var j = 0; j < val-1; j++){
+  createDivRow() 
+  }
+}
+}
+
+createBoard(val);
+ 
+
+
+// //clears grid
+// function clearGrid(){
+
+//     location.reload()
+// }
