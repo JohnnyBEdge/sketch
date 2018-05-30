@@ -4,18 +4,28 @@
 }
 
 
-.container {
-    grid-gap: 0;
-    border: solid blue 2px;
-
+.gameboard {
+    background-color: rgb(160, 10, 10);
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 5%;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 90px;
+    border: black solid 1px;
+    box-shadow: 5px 5px rgb(158, 153, 153);
+    }
+    
+.screen{
+    border: solid black 2px;
     width: 80%;
     height: 500px;
     margin: 0 auto;
-    }
-    
+}
+
 .cell{
     border: solid 1px black;
     min-width: 1px;
     min-height: 1px;
-    background-color: green;
+    background-color: rgb(202, 198, 198);
     }

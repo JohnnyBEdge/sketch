@@ -4,9 +4,9 @@ var val = prompt("enter value");
 
 function createDivs(){
 
-var getContainer = document.getElementById('contain');
-contain.style.display= 'grid';
-contain.style.gridTemplateColumns = 'repeat('+val+',1fr)';
+var getContainer = document.getElementById('screenplay');
+getContainer.style.display= 'grid';
+getContainer.style.gridTemplateColumns = 'repeat('+val+',1fr)';
 
 var createDiv = document.createElement('div');
 createDiv.className = "cell";
@@ -15,7 +15,7 @@ getContainer.appendChild(createDiv);
 }
 
 function createDivRow(){
-var getContainer = document.getElementById('contain');
+var getContainer = document.getElementById('screenplay');
 
 var createRow = document.createElement('div');
 createRow.className = "cell";
