@@ -1,3 +1,4 @@
+function play(){
 
 var val = prompt("enter value");
 
@@ -26,7 +27,7 @@ getContainer.appendChild(createRow);
 }
 
 function createBoard(){
-for(var i = 0; i < val; i++){
+ for(var i = 0; i < val; i++){
   createDivs();
   for(var j = 0; j < val-1; j++){
   createDivRow() 
@@ -34,24 +35,7 @@ for(var i = 0; i < val; i++){
 }
 }
 
-createBoard(val);
-
-//changes background to black, not yet working
-
-//  let cellColor = 'black';
-
-// var testing = document.getElementsByClassName("cell");
-// testing.addEventListener('mouseover', (e) => {
-//   e.target.style.backgroundColor = 'black';
-// });
-  //     for (var i = 0; i < test.length; i++){
-  //   test[i].style.backgroundColor = 'yellow';
-  // };
-
-  // testing.addEventListener('mouseover',
-  // function(e){
-  //     e.target.style.backgroundColor = 'black';
-  // });
+createBoard();
 
  //Turns grid color black
     var colorBlack = document.getElementsByClassName("cell");
@@ -60,5 +44,4 @@ createBoard(val);
           e.target.style.backgroundColor = 'black';
         })
       )}
-  
-
+    }

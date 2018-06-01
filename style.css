@@ -29,3 +29,19 @@
     min-height: 1px;
     background-color: rgb(202, 198, 198);
     }
+
+.buttons{
+    position: relative;
+    text-align: center;
+    top: 575px;
+}
+
+.buttons input{
+    border-radius: 10%;
+    padding: 15px;
+  
+    }
+
+#reset{
+    margin-right: 75px;
+}
