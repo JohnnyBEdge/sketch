@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Etch-a-Sketch</title>
     <link rel="stylesheet" href="/style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
   </head>
   <body>
 
@@ -12,12 +12,24 @@
       <div class = 'gameboard' id = 'game'>
 
           <div class="buttons">
-            <span class="button" id="reset" onclick="play()">
-              <input type="button" value="Reset">
+            <span class="button" id="start" onclick="play()">
+              <input type="button" value="Start">
             </span>
             <span class="button" id="reset">
-                <input type="button" value="Change color">
+                <input type="button" onclick = "refresh()" value="Reset">
             </span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+
+              <span class="button" id="black" >
+                  <input type="button" value="black" onclick="blackout()">
+                </span>
+                <span class="button" id="start" >
+                    <input type="button" value="color" onclick="colorize()">
+                  </span>
+  
           </div>
 
         <div class="screen" id = "screenplay">
