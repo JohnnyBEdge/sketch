@@ -1,3 +1,4 @@
+
 function play(){
 var val = prompt("Enter grid size 2-100");
 
@@ -37,8 +38,11 @@ function createBoard(){
 }
 }
 
+
 createBoard();
+blackout();
 };
+
  //Turns grid multicolored
  function colorize(){
     var colorBlack = document.getElementsByClassName("cell");
@@ -48,11 +52,8 @@ createBoard();
         })
       )}
     }
-    
- 
 
-
-    //Turns grid color black
+ //Turns grid color black
 function blackout(){
     var colorBlack = document.getElementsByClassName("cell");
     for (var i=0;i < colorBlack.length;i++){
@@ -67,15 +68,12 @@ function blackout(){
     function addRandomBackgroundColor(e) {
       e.target.style.backgroundColor = randomColor();
     }
-    
     function randomColor() {
       return `rgb(${randomNum(256)}, ${randomNum(256)}, ${randomNum(256)})`;
     }
-    
     function randomNum(max) {
       return Math.floor(Math.random() * Math.floor(max)); //The maximum is exclusive
     };
-
     function refresh(){
       location.reload();
     };
